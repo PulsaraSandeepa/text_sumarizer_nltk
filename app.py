@@ -12,6 +12,7 @@ def index():
 @app.route("/", methods=['GET', 'POST'])
 def summarize():
  import nltk
+ nltk.download('all')
  from nltk.corpus import stopwords
  from nltk.tokenize import word_tokenize, sent_tokenize
  import re
