@@ -9,7 +9,7 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/", methods=['GET', 'POST'])
+@app.route("", methods=['GET', 'POST'])
 def summarize():
  import nltk
  from nltk.corpus import stopwords
